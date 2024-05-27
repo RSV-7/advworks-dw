@@ -1,0 +1,19 @@
+select
+    purchase_detail_id,
+    vendor_name,
+    product_name,
+    unit_price,
+    order_qty,
+    received_qty,
+    rejected_qty,
+    purchase_order_id,
+    employee_loginid,
+    shipment,
+    order_status,
+    tax_amt,
+    freight,
+    ship_date,
+    due_date,
+    order_date,
+    purchasing_last_update
+from {{ ref("stg_purchasing") }}
